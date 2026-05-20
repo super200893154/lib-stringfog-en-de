@@ -9,37 +9,37 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>github.super200893154</groupId>
   <artifactId>stringfog-en-de</artifactId>
-  <version>1.0.8</version>
+  <version>1.0.9</version>
   <packaging>aar</packaging>
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib</artifactId>
-      <version>2.0.10</version>
+      <version>2.2.10</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>androidx.core</groupId>
       <artifactId>core-ktx</artifactId>
-      <version>1.13.1</version>
+      <version>1.18.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>androidx.appcompat</groupId>
       <artifactId>appcompat</artifactId>
-      <version>1.7.0</version>
+      <version>1.7.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.google.android.material</groupId>
       <artifactId>material</artifactId>
-      <version>1.12.0</version>
+      <version>1.14.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
-      <groupId>com.github.megatronking.stringfog</groupId>
+      <groupId>com.github.super200893154.StringFog</groupId>
       <artifactId>interface</artifactId>
-      <version>5.0.0</version>
+      <version>5.3.1</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
