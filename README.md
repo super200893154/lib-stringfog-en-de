@@ -8,7 +8,7 @@
 |------|-----|
 | Group ID | `github.super200893154` |
 | Artifact ID | `stringfog-en-de` |
-| 当前版本 | `1.0.9` |
+| 当前版本 | `1.1.0` |
 | 包类型 | AAR (Android Archive) |
 | 远程仓库 | https://github.com/super200893154/lib-stringfog-en-de |
 
@@ -18,13 +18,13 @@
 lib-stringfog-en-de/
 ├── jitpack.yml              # JitPack 构建配置
 ├── pom-default.xml          # Maven POM 配置文件
-├── stringfog-en-de-1.0.9.aar # 预编译的 Android 库文件
+├── stringfog-en-de-1.1.0.aar # 预编译的 Android 库文件
 └── README.md               # 项目文档
 ```
 
 ## 技术栈
 
-- **Kotlin**: 2.2.10
+- **Kotlin**: 2.2.21
 - **AndroidX Core KTX**: 1.18.0
 - **AndroidX AppCompat**: 1.7.1
 - **Material Components**: 1.14.0
@@ -55,18 +55,17 @@ repositories {
 **Gradle Groovy:**
 ```groovy
 dependencies {
-    implementation 'github.super200893154:stringfog-en-de:1.0.9'
+    implementation 'github.super200893154:stringfog-en-de:1.1.0'
 }
-```
 
 **Gradle Kotlin DSL:**
 ```kotlin
 dependencies {
-    implementation("github.super200893154:stringfog-en-de:1.0.9")
+    implementation("github.super200893154:stringfog-en-de:1.1.0")
 }
 ```
 
-> **注意**：更新版本时，请将 `1.0.9` 替换为所需的版本号。
+> **注意**：更新版本时，请将 `1.1.0` 替换为所需的版本号。
 
 ## 构建和发布
 
@@ -79,8 +78,8 @@ dependencies {
 jdk:
   - openjdk17
 install:
-  - FILE="-Dfile=stringfog-en-de-1.0.9.aar"
-  - mvn install:install-file $FILE -DgroupId=github.super200893154 -DartifactId=stringfog-en-de -Dversion=1.0.9 -Dpackaging=aar -DpomFile=pom-default.xml
+  - FILE="-Dfile=stringfog-en-de-1.1.0.aar"
+  - mvn install:install-file $FILE -DgroupId=github.super200893154 -DartifactId=stringfog-en-de -Dversion=1.1.0 -Dpackaging=aar -DpomFile=pom-default.xml
 ```
 
 ### 本地安装
@@ -88,7 +87,7 @@ install:
 如需在本地测试库安装，可使用以下 Maven 命令：
 
 ```bash
-mvn install:install-file -Dfile=stringfog-en-de-1.0.9.aar -DgroupId=github.super200893154 -DartifactId=stringfog-en-de -Dversion=1.0.9 -Dpackaging=aar -DpomFile=pom-default.xml
+mvn install:install-file -Dfile=stringfog-en-de-1.1.0.aar -DgroupId=github.super200893154 -DartifactId=stringfog-en-de -Dversion=1.1.0 -Dpackaging=aar -DpomFile=pom-default.xml
 ```
 
 ### 发布流程
@@ -122,7 +121,7 @@ mvn install:install-file -Dfile=stringfog-en-de-1.0.9.aar -DgroupId=github.super
 
 | 依赖 | 版本 | 范围 | 说明 |
 |------|------|------|------|
-| kotlin-stdlib | 2.2.10 | compile | Kotlin 标准库 |
+| kotlin-stdlib | 2.2.21 | compile | Kotlin 标准库 |
 | androidx.core:core-ktx | 1.18.0 | runtime | AndroidX 核心 Kotlin 扩展 |
 | androidx.appcompat:appcompat | 1.7.1 | runtime | AndroidX AppCompat 库 |
 | com.google.android.material:material | 1.14.0 | runtime | Material Design 组件 |
