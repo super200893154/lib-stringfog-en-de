@@ -95,7 +95,7 @@ repositories {
 - 更新版本时，需要同步更新：
   - `jitpack.yml` 中的版本号
   - `pom-default.xml` 中的 `<version>` 标签
-  - AAR 文件名中的版本号
+  - AAR 打包的新版aar
 
 ### 发布流程
 
